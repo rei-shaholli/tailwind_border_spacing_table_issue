@@ -6,7 +6,7 @@ export default function Home() {
         <main className="flex min-h-screen flex-col items-center justify-between p-24">
             {/* problem happens when the table is embedded in a component */}
                 <SomeTableComponent/>
-            {/* no problem when the table is directly in the page */}
+            {/* no problem when the table is directly in the page, meaning you can change the border-spacing and border-separate, and it will change the applied styles */}
             {/*<table className="table-auto w-full shadow-lg mt-5 rounded border-separate border-spacing-y-3">*/}
             {/*    <thead className="text-left text-gray-500 tracking-wider">*/}
             {/*    <tr>*/}
