@@ -4,7 +4,9 @@ import SomeTableComponent from "@/features/tst/components/SomeTableComponent";
 export default function Home() {
     return (
         <main className="flex min-h-screen flex-col items-center justify-between p-24">
-            <SomeTableComponent />
+            {/* problem happens when the table is embedded in a component */}
+                <SomeTableComponent/>
+            {/* no problem when the table is directly in the page */}
             {/*<table className="table-auto w-full shadow-lg mt-5 rounded border-separate border-spacing-y-3">*/}
             {/*    <thead className="text-left text-gray-500 tracking-wider">*/}
             {/*    <tr>*/}
@@ -29,6 +31,6 @@ export default function Home() {
             {/*    </tr>*/}
             {/*    </tbody>*/}
             {/*</table>*/}
-        </main>
-    );
-}
+                </main>
+                );
+            }
